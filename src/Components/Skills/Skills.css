@@ -1,0 +1,67 @@
+.skills_section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills_slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.skills_track {
+    display: flex;
+    gap: 30px;
+    animation: scrollSkills 15s linear infinite;
+    width: calc(200px * 20); /* Adjust width dynamically */
+}
+
+/* Individual skill card */
+.skill_card {
+    width: 120px;
+    text-align: center;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Initially hide the skill name */
+.skill_card p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1; /* Hide name initially */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    text-align: center;
+}
+
+/* Show the skill name on hover */
+.skill_card:hover p {
+    opacity: 1; /* Make name visible on hover */
+}
+
+/* Image style */
+.skill_card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Smooth infinite scrolling */
+@keyframes scrollSkills {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
