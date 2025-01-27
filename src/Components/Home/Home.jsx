@@ -7,7 +7,7 @@ const Home = () => {
       <header className="flex flex-col md:flex-row justify-center items-center w-full relative">
 
         {/* Left Section */}
-        <div className="md:absolute left-[1.25rem] top-[45%] w-[22rem] md:w-[33.33%] order-2 md:order-1 text-left">
+        <div className="md:absolute left-[1.25%]  top-[45%] w-[95%] md:w-[33.33%] order-2 md:order-1 text-left">
           <h3 className="text-[1.15rem] md:text-[1.5rem] font-bold">Vishal S. Gupta</h3>
           <p className="mt-[0rem] text-gray-700 text-[0.800rem] md:text-[1.1rem]">
             I am a <span className="font-bold text-[#ff5f49] ">Front-End Developer</span> skilled in building attractive websites and web apps using HTML, CSS, Tailwind, JavaScript, and React. I hold a BSc (IT) Degree from Valia College of Commerce and Science, University of Mumbai, with a CGPA of 7.32.
@@ -78,9 +78,9 @@ const Home = () => {
 
 
         {/* Right Section */}
-        <div className="absolute right-[0.1rem]  top-[10%] w-[38%] md:w-[30%] md:top-[28%] md:right-[0.5rem] text-left">
+        <div className="absolute right-[-0.1rem]  top-[9%] w-[59vw] md:w-[26vw] md:top-[28%] md:right-[0.5rem] text-left">
           <h3 className="text-[1.15rem] md:text-[1.8rem] font-bold">&lt;Coder/&gt;</h3>
-          <p className="mt-[0rem] text-gray-700 text-[0.800rem] md:text-[1.5rem]">
+          <p className="mt-[0rem] text-gray-700 text-[3.6vw] md:text-[1.5rem]">
             A <span className="text-[#ff5f49] font-bold">Front-End Developer</span> who writes clean, efficient code with <span className="text-[#ff5f49] font-bold">modern web technologies. 🚀</span> 
           </p>
           

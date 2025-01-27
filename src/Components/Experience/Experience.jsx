@@ -6,11 +6,11 @@ function Experience() {
     <div className="experience">
       <div className="experience-container">
         <div className="heading">
-        <img src="src/assets/images/magicbus.png" alt="Magic Bus Foundation" className="experience-image" />
+        <img src="src/assets/images/magic-bus-logo.gif" alt="Magic Bus Foundation" className="experience-image" />
         <h2>Magic Bus Foundation </h2>
         </div>
         <div className="experience-content">
-          <p>( Front-end Development (Training)) November 2024</p>
+          <p className="training">( Front-end Development (Training) ) November 2024</p>
           <p>
             Completed an intensive offline training program in Web Designing & UX/UI, gaining
             expertise in modern web development skills and industry-relevant tools. The curriculum

@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div>
-        <img src="src/assets/images/logo.png" alt="Portfolio" />
+        <img src="src/assets/images/Portfolio.png" alt="Portfolio" />
       </div>
 
       <div
@@ -68,59 +68,79 @@ const Navbar = () => {
         </li>
 
         <div className="social-icons">
-          <a href="https://www.instagram.com" target="_blank" className="social-icon">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            className="social-icon"
+          >
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://www.twitter.com" target="_blank" className="social-icon">
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            className="social-icon"
+          >
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://web.telegram.org" target="_blank" className="social-icon">
+          <a
+            href="https://web.telegram.org"
+            target="_blank"
+            className="social-icon"
+          >
             <i className="fab fa-telegram-plane"></i>
           </a>
-          <a href="https://www.whatsapp.com" target="_blank" className="social-icon">
+          <a
+            href="https://www.whatsapp.com"
+            target="_blank"
+            className="social-icon"
+          >
             <i className="fab fa-whatsapp"></i>
           </a>
         </div>
 
-        <div className="search-container"><input className="search-input" type="text" placeholder="Search.." />
+        <div className="search-container">
+          <input className="search-input" type="text" placeholder="Search.." />
           <i className="fas fa-search" id="search-icon"></i>
-          
         </div>
 
         {/* Mobile Theme & CV Download */}
-       {/* Desktop Theme & CV Preview */}
-<div className="ThemeCV-mb">
-  <button onClick={toggleTheme} className="theme-toggle">
-    {isDarkTheme ? "🌞" : "🌙"}
-  </button>
-  <button
-    className="DownloadCV"
-    onClick={() => {
-      window.open("https://drive.google.com/file/d/1GqluJZAE23pn55dW6wN5ZGDdoxPKLSye/view", "_blank");
-    }}
-  >
-    View CV!
-  </button>
-</div>
-
+        {/* Desktop Theme & CV Preview */}
+        <div className="ThemeCV-mb">
+          <button onClick={toggleTheme} className="theme-toggle">
+            {isDarkTheme ? "🌞" : "🌙"}
+          </button>
+          <button
+            className="DownloadCV"
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1GqluJZAE23pn55dW6wN5ZGDdoxPKLSye/view",
+                "_blank"
+              );
+            }}
+          >
+            View CV!
+          </button>
+        </div>
       </ul>
 
       {/* Desktop Theme & CV Download */}
-     {/* Desktop Theme & CV Preview */}
-<div className="ThemeCV">
-  <button onClick={toggleTheme} className="theme-toggle">
-    {isDarkTheme ? "🌞" : "🌙"}
-  </button>
-  <button
-    className="DownloadCV"
-    onClick={() => {
-      window.open("https://drive.google.com/file/d/1GqluJZAE23pn55dW6wN5ZGDdoxPKLSye/view", "_blank");
-    }}
-  >
-    View CV!
-  </button>
-</div>
-
+      {/* Desktop Theme & CV Preview */}
+      <div className="ThemeCV">
+        <button onClick={toggleTheme} className="theme-toggle">
+          {isDarkTheme ? "🌞" : "🌙"}
+        </button>
+        <button
+          className="DownloadCV"
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1GqluJZAE23pn55dW6wN5ZGDdoxPKLSye/view",
+              "_blank"
+            );
+          }}
+        >
+          View CV!
+        </button>
+      </div>
     </nav>
   );
 };

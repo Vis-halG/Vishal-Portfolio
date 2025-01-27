@@ -19,12 +19,19 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
+.projects h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    }
+    .projects p {
+    font-size: 1rem;
+    color: #555;
+    }
 
 .projects div:hover {
     transform: scale(1.05);
 }
-
-/* Filter Buttons */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -35,20 +42,21 @@
     margin: 5px;
     padding: 10px 15px;
     border: none;
-    background-color: #007bff;
+    background-color: #ff6f61;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
 }
-
+/* 
 .filter-buttons button:hover {
-    background-color: #0056b3;
-}
+    background-color: whitesmoke;
+} */
 
 /* Highlight active button */
 .filter-buttons .active {
-    background-color: #ff9800;
+    background-color: whitesmoke;
+    color: #ff6f61;
 }
 
 /* Project Cards */
@@ -76,7 +84,7 @@
 }
 
 .project-item:hover {
-    background-color: #e3f2fd;
+    /* background-color: #e3f2fd; */
     transform: scale(1.05);
 }
 
@@ -100,4 +108,77 @@
     font-size: 14px;
     color: #555;
     padding: 0 10px;
+}
+@media only screen and (max-width: 600px) {
+    .projects{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        
+        
+        }
+        
+        .projects div {
+        text-align: center;
+        padding: 1vw 3vw ;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        }
+        .projects h2 {
+        font-size: 1.5rem;
+        color: #333;
+        font-weight: 600;
+        }
+        .projects p {
+        font-size: 0.7rem;
+        color: #555;
+        }
+  }
+/* View Project Button on Hover */
+.project-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+.view-project-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    background-color: #ff6f61;
+    color: whitesmoke;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-item:hover .view-project-button {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.view-project-button:hover {
+    color: #ff6f61;
+    background-color: rgb(217, 215, 215);
 }

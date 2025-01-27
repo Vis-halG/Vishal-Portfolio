@@ -1,7 +1,7 @@
 #root {
-  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0.1rem;
   text-align: center;
 }
 
@@ -40,3 +40,38 @@
 .read-the-docs {
   color: #888;
 }
+/* Dark Theme */
+body.dark-theme {
+  background-color: #1c1c1e;
+  color: white;
+}
+
+body.dark-theme .navbar {
+  background-color: #1c1c1e;
+  color: white;
+}
+
+body.dark-theme .nav-item a {
+  color: white;
+}
+
+body.dark-theme .social-icon {
+  color: white;
+}
+
+body.dark-theme .search-input {
+  border-bottom: 2px solid white;
+}
+       
+body.dark-theme .nav {
+ 
+  background-color: #1c1c1e;
+  
+}
+body.dark-theme .menu-toggle .bar {
+  
+  background-color: rgb(255, 255, 255);
+}
+
+
+
