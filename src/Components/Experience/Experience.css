@@ -1,60 +1,104 @@
-.experience {
-    padding: 20px;
-    background-color: #f9f9f9;
-    text-align: left;
-    width: 100%;
+.experience-container {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  text-align: center;
+  height: 60vh; /* Adjusted for better responsiveness */
+  background-color: rgb(255, 255, 255);
+  position: relative; /* Needed for absolute positioning inside */
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.04vw;
+  background-color:white;
+  border-radius: 8px;
+  position: absolute; /* This will overlap other content */
+  z-index: 1;
+  width: 14vw;
+  margin-left: -66.5vw;
+  border: 2px solid black;
+}
+
+.experience-image {
+  width: 8vw; /* Adjust image size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.experience-content {
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+  width: 74vw;
+  margin-left: 7vw;
+  text-align: left;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.experience-container p {
+  width: 66vw;
+  margin-left: 6.5vw;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .experience-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Allow height to adjust dynamically */
+    padding: 20px 0;
   }
-  
+
   .heading {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     gap: 10px;
-  }
-  
-  .experience-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    background: white;
-    padding: 20px;
+    padding: 10px;
+    
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    position: absolute; /* Changed from absolute */
+    z-index: 1;
+    width: auto;
+    margin: 0 auto; /* Center it */
+    text-align: center;
+    top: -8vw;
   }
-  
-  .experience-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
+
   .experience-image {
-    width: 50px;
+    width: 17vw; /* Adjust for mobile */
     height: auto;
-    border-radius: 8px;
+   
   }
-  
+
   .experience-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding:20px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    width: 95vw; /* Make it more responsive */
+    margin: 10px auto;
+    height: auto;
+    margin-top: 50px;
+    
+    border: 2px solid rgb(0, 0, 0);
   }
-  
-  .experience-content h2 {
-    margin: 0;
-    font-size: 1.5em;
+.experience-container div{
+  margin-top: 8vw;
+}
+  .experience-container p {
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -2.5vw;
   }
-  
-  .experience-content p {
-    margin: 5px 0;
-    color: #555;
-    line-height: 1.6;
-    text-align: justify;
-  }
-  .experience-content .training{
-    color: #ff5f49;
-    font-weight: bold;
-    font-size:20px-5;
-  }
+}

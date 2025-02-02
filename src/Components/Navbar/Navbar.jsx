@@ -50,7 +50,7 @@ const Navbar = () => {
         <span className="close-btn" onClick={closeMobileMenu}>
           &times;
         </span>
-
+<div className="nav-items">
         <li className="nav-item">
           <a href="#">Home</a>
         </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
         <li className="nav-item">
           <a href="#">Contact Us</a>
         </li>
-
+        </div>
         <div className="social-icons">
           <a
             href="https://www.instagram.com"

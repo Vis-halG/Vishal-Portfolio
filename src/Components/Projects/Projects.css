@@ -1,184 +1,284 @@
-/* Project Statistics */
+/* Projects Section */
 .projects {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 8100px;
-    margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 20px auto;
+  font-size: 1rem;
 }
 
 .projects div {
-    text-align: center;
-    padding: 15px 50px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 3vh 7vh;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
-.projects h2 {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: 600;
-    }
-    .projects p {
-    font-size: 1rem;
-    color: #555;
-    }
 
 .projects div:hover {
-    transform: scale(1.05);
-}
-.filter-buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  transform: scale(1.05);
 }
 
-.filter-buttons button {
-    margin: 5px;
-    padding: 10px 15px;
-    border: none;
-    background-color: #ff6f61;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-/* 
-.filter-buttons button:hover {
-    background-color: whitesmoke;
-} */
-
-/* Highlight active button */
-.filter-buttons .active {
-    background-color: whitesmoke;
-    color: #ff6f61;
+/* Category Title */
+.category-title {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
 }
 
-/* Project Cards */
+/* Project List */
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
+/* Individual Project Item */
 .project-item {
-    width: 410px;
-    padding: 15px;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: 0.3s;
-    overflow: hidden;
-}
-
-/* Highlight projects when filtered */
-.project-item {
-    background-color: #f8f9fa;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-item:hover {
-    /* background-color: #e3f2fd; */
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-/* Project Images */
+/* Image Styling */
 .project-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-/* Project Titles */
-.project-item h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #333;
-}
-
-/* Project Descriptions */
-.project-item p {
-    font-size: 14px;
-    color: #555;
-    padding: 0 10px;
-}
-@media only screen and (max-width: 600px) {
-    .projects{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        background-color: #f4f4f4;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        
-        
-        
-        }
-        
-        .projects div {
-        text-align: center;
-        padding: 1vw 3vw ;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-        }
-        .projects h2 {
-        font-size: 1.5rem;
-        color: #333;
-        font-weight: 600;
-        }
-        .projects p {
-        font-size: 0.7rem;
-        color: #555;
-        }
-  }
-/* View Project Button on Hover */
-.project-item {
-    position: relative;
-    overflow: hidden;
-}
-
-.project-item img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-item:hover img {
-    transform: scale(1.05);
-    filter: brightness(0.7);
-}
-
+/* View Project Button */
 .view-project-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px 10px;
-    background-color: #ff6f61;
-    color: whitesmoke;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.project-item:hover .view-project-button {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .view-project-button:hover {
-    color: #ff6f61;
-    background-color: rgb(217, 215, 215);
+  background-color: #e55347;
 }
+
+/* Hover Water Fill Effect */
+.project-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #ff6f61;
+  opacity: 0.8;
+  transition: height 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.project-item:hover::after {
+  height: 100%;
+}
+
+/* Ensure Content Stays Above Effect */
+.project-item * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Category Title */
+.category-title {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Project List */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Individual Project Item */
+.project-item {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.project-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* View Project Button */
+.view-project-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.view-project-button:hover {
+  background-color: #e55347;
+}
+
+/* Hover Water Fill Effect */
+.project-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #ff6f61;
+  opacity: 0.8;
+  transition: height 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.project-item:hover::after {
+  height: 100%;
+}
+
+/* Ensure Content Stays Above Effect */
+.project-item * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-item h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+.project-item p{
+  font-size: 13px;
+}
+
+/* Responsive Design - Mobile View */
+@media screen and (max-width: 1300px) {
+  .projects {
+    flex-wrap: wrap;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .projects div {
+    font-size: 1rem;
+    padding: 1vh 1vh;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .project-item {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .project-item img {
+    height: 120px;
+    border-radius: 5px;
+  }
+
+  .view-project-button {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 600px) {
+  .project-list {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .projects {
+    flex-wrap: wrap;
+    padding: 5px;
+    max-width: 100%;
+  }
+
+  .projects div {
+    font-size: 0.7rem;
+    padding: 2vh 1vh;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .project-item {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .project-item img {
+    height: 100px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+  }
+
+  .view-project-button {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}
+@media screen and  (max-width: 360px){
+ 
+  .projects div {
+    font-size: 0.6rem;
+    padding: 2vh 1vh;
+  }
+}
+  

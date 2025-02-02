@@ -10,6 +10,7 @@ function Experience() {
         <h2>Magic Bus Foundation </h2>
         </div>
         <div className="experience-content">
+          <div>
           <p className="training">( Front-end Development (Training) ) November 2024</p>
           <p>
             Completed an intensive offline training program in Web Designing & UX/UI, gaining
@@ -27,6 +28,7 @@ function Experience() {
             Tested features for browser compatibility, staying current with front-end trends to enhance
             skills and deliver optimized solutions.
           </p>
+          </div>
         </div>
       </div>
     </div>

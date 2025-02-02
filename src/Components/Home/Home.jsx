@@ -14,35 +14,43 @@ const Home = () => {
           </p>
 
           <div className="flex gap-[1rem] mt-[1rem]">
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              className="text-pink-500 text-[1.5rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-pink-700"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="text-blue-400 text-[1.5rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-500"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              className="text-blue-600 text-[1.5rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-800"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              className="text-blue-700 text-[1.5rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-900"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </div>
+  <a
+    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+    target="_blank"
+    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-700"
+  >
+    <i className="fab fa-linkedin"></i>
+  </a>
+  <a
+    href="mailto:VishalGupta25980@gmail.com"
+    target="_blank"
+    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-red-500"
+  >
+    <i className="fas fa-envelope"></i>
+  </a>
+  <a
+    href="https://wa.me/9773146258"
+    target="_blank"
+    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-green-500"
+  >
+    <i className="fab fa-whatsapp"></i>
+  </a>
+  <a
+    href="https://www.twitter.com"
+    target="_blank"
+    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-400"
+  >
+    <i className="fab fa-twitter"></i>
+  </a>
+  <a
+    href="tel:+9773146258"
+    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-500"
+  >
+    <i className="fas fa-phone"></i>
+  </a>
+ 
+</div>
+
         </div>
         <div className="absolute flex justify-end items-center  md:right-[55%] md:top-[6rem]  right-[15.5rem] top-[18%] w-[22rem] md:w-[33.33%]">
   <img
@@ -89,8 +97,8 @@ const Home = () => {
         {/* Smile Face (Hidden on Mobile) */}
         <div className="hidden md:block md:absolute right-[0%] md:right-[0%] md:top-[55%] md:w-[25%]">
           <img
-            className="opacity-10"
-            src="src/assets/images/smile.png"
+            className="opacity-1"
+            src="data:image/svg+xml,%3csvg%20width='250'%20height='250'%20viewBox='0%200%20216%20216'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_240_270)'%3e%3cpath%20d='M39.1588%20131.239C31.3359%20108.982%2031.8572%2083.8735%2047.4841%2060.5361C51.6616%2054.2921%2057.5633%2049.0355%2063.2774%2044.0082C91.3551%2019.3465%20140.592%2026.1057%20165.718%2064.0027C183.717%2091.1355%20186.714%20120.111%20171.299%20149.28C150.301%20189.029%2099.2127%20197.718%2064.5864%20168.18C53.7839%20159%2045.9089%20148.068%2039.1588%20131.239ZM132.503%20172.223C147.9%20165.764%20158.409%20155.734%20164.752%20141.691C175.211%20118.519%20173.477%2095.6074%20161.377%2073.6562C151.849%2056.3821%20137.482%2044.6235%20118.194%2039.3425C100.028%2034.3899%2083.3218%2038.4893%2068.2214%2048.7333C62.997%2052.2652%2058.7516%2057.7928%2055.2174%2063.1617C34.1942%2095.2096%2043.5094%20140.784%2075.5645%20163.383C93.377%20175.941%20112.771%20179.383%20132.503%20172.223Z'%20fill='%23002F6C'%20fill-opacity='0.06'/%3e%3cpath%20d='M149.025%20102.506C147.091%20102.159%20145.514%20102.167%20144.238%20101.528C143.283%20101.071%20142.317%20100.433%20142.181%2098.8453C142.072%2097.557%20143.538%2096.7265%20144.303%2096.7015C149.316%2096.6914%20154.329%2096.8362%20159.315%2097.3017C160.212%2097.3785%20161.68%2098.3439%20161.623%20100.07C161.549%20101.989%20160.618%20102.452%20158.778%20102.811C157.661%20103.038%20156.336%20102.976%20154.844%20103.043C154.975%20123.401%20146.01%20138.485%20127.541%20146.878C109.65%20155.01%2092.0027%20152.298%2074.9314%20142.853C73.7898%20144.266%2072.8132%20146.017%2071.3355%20147.131C70.1631%20148%2067.7489%20149.64%2066.9178%20148.484C65.3126%20146.861%2066.3425%20145.244%2066.981%20144.123C69.219%20140.012%2071.7079%20135.988%2074.4849%20132.221C75.3481%20131.042%2077.1961%20129.223%2078.8829%20130.195C81.05%20131.439%2080.0466%20133.201%2079.4228%20134.904C79.1539%20135.631%2078.7836%20136.335%2078.311%20137.328C95.6511%20146.047%20113.017%20147.973%20130.111%20137.68C143.009%20129.921%20148.777%20117.78%20149.025%20102.506Z'%20fill='%23002F6C'%20fill-opacity='0.06'/%3e%3cpath%20d='M122.623%2076.0495C121.411%2073.3103%20120.506%2071.6568%20120.11%2069.3363C119.878%2067.9729%20120.594%2065.6442%20121.611%2065.0852C123.157%2064.2229%20125.111%2065.2427%20125.97%2066.2334C131.439%2072.5151%20135.49%2079.67%20137.471%2087.7717C137.794%2089.13%20136.784%2091.7306%20135.681%2092.2306C134.526%2092.7518%20132.446%2092.8968%20131.056%2090.8787C127.785%2086.2321%20123.394%2077.7562%20122.623%2076.0495Z'%20fill='%23002F6C'%20fill-opacity='0.06'/%3e%3cpath%20d='M69.3025%20107.645C67.3042%20102.617%2066.4809%20100.311%2065.8946%2097.1993C65.6515%2095.9641%2065.5175%2093.7565%2067.24%2093.1029C68.5993%2092.315%2070.5895%2093.816%2071.1968%2094.7206C74.8987%20100.373%2078.9952%20108.811%2082.0353%20116.46C82.8431%20118.493%2083.2545%20120.931%2080.6117%20122.075C77.819%20123.308%2076.3805%20121.247%2075.252%20119.187C72.9259%20114.97%2071.2649%20112.038%2069.3025%20107.645Z'%20fill='%23002F6C'%20fill-opacity='0.06'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_240_270'%3e%3crect%20width='165.785'%20height='165.785'%20fill='white'%20transform='translate(0%2061.2258)%20rotate(-21.6729)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
             alt="Smile Face with Transparent Background"
           />
         </div>

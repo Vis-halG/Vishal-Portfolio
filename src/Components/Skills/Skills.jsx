@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Skills.css";
 
 const skills = [
@@ -15,19 +15,42 @@ const skills = [
 ];
 
 function Skills() {
+    const [isVisible, setIsVisible] = useState(false);
+    const skillsRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                setIsVisible(entries[0].isIntersecting);
+            },
+            { threshold: 0.3 }
+        );
+
+        if (skillsRef.current) {
+            observer.observe(skillsRef.current);
+        }
+
+        return () => {
+            if (skillsRef.current) {
+                observer.unobserve(skillsRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <div className="skills_section">
+        <div ref={skillsRef} className="skills_section">
             <h1>My Skills</h1>
-            <div className="skills_slider">
-                <div className="skills_track">
-                    {/* Duplicate images for smooth infinite scrolling */}
-                    {[...skills, ...skills].map((skill, index) => (
-                        <div key={index} className="skill_card">
-                            <img src={`/assets/skills/${skill.image}`} alt={skill.name} />
-                            <p>{skill.name}</p>
-                        </div>
-                    ))}
-                </div>
+            <div className="skills_grid">
+                {skills.map((skill, index) => (
+                    <div 
+                        key={index} 
+                        className={`skill_card ${isVisible ? "pop-move" : "pop-down"}`} 
+                        style={{ animationDelay: `${index * 0.2}s` }}
+                    >
+                        <img src={`/assets/skills/${skill.image}`} alt={skill.name} />
+                        <p>{skill.name}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );

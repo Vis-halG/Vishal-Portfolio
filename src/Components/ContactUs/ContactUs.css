@@ -1,32 +1,33 @@
 /* ContactForm.css */
 .contact-form-container {
-    min-height: 100vh;
+    height: 80vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1a1a1a;
-    color: white;
-    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+   
+
   }
   
   .contact-form {
-    max-width: 600px;
+  padding: 90px;
     width: 100%;
     text-align: left;
     display:flex;
-    gap:25px;
+    gap:105px;
   }
   
   .title {
-    font-size: 3.5rem;
+    font-size: 7rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    width:400px;
+    line-height: 100px;
   }
   
   .subtitle {
-    color: #999;
-    margin-bottom: 20px;
-    
+    margin-left: 0;
   }
   
   .form {
@@ -36,16 +37,17 @@
   }
   
   .form-text {
-    font-size:1rem;
-    line-height: 1;
+    font-size:1.9rem;
+    font-weight: bold;
+    line-height: 1.6;
   }
   
   .input-field {
-    background-color: #333;
-    color: white;
+    background-color: transparent;
+    color: black;
     border: none;
     border-bottom: 2px solid #555;
-    margin-left: 8px;
+  margin: 0 10px 0 10px;
     padding: 5px;
     font-size: 1rem;
     outline: none;
@@ -68,4 +70,92 @@
   .submit-button:hover {
     background-color: #666;
   }
+  @media screen and (max-width: 1150px) {
+    .contact-form-container {
+      height: 20em;
+      margin-top: 100px;
+    }
   
+    .contact-form {
+      padding: 15px;
+        width: 100%;
+        text-align: left;
+        display:block;
+        gap:25px;
+      }
+      .title {
+        font-size:4rem;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        font-weight: bold;
+        width:550px;
+      }
+      .contact-title{
+        font-size: 1rem;
+        margin-bottom: 30px;
+        width:200px;
+      }
+        
+  .form-text {
+    font-size:1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .input-field {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #555;
+  margin: 0 0px 0 0px;
+    padding: 0px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-form-container {
+      height: 20em;
+      margin-top: 50px;
+    }
+  
+    .contact-form {
+      padding: 15px;
+        width: 100%;
+        text-align: left;
+        display:block;
+        gap:25px;
+      }
+      .title {
+        font-size: 2.2rem;
+        margin-left: 0px;
+        margin-bottom: -25px;
+        font-weight: bold;
+        width:300px;
+      }
+      .contact-title{
+        font-size: 1rem;
+        margin-bottom: 30px;
+        width:200px;
+      }
+        
+  .form-text {
+    font-size:1rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .input-field {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #555;
+  margin: 0 0px 0 0px;
+    padding: 0px;
+    font-size: 0.7rem;
+    outline: none;
+  }
+  
+  }

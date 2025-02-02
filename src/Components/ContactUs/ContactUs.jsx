@@ -11,7 +11,7 @@ const ContactUs = () => {
       <div className="contact-form">
         <div className="contact-title">
         <h1 className="title">Let's get started.</h1>
-        <p className="subtitle">BASIC CONTACT FORM</p>
+        <p className="subtitle">- CONTACT FORM</p>
         </div>
         <form className="form">
           <p className="form-text">
@@ -20,7 +20,7 @@ const ContactUs = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="JOHN SMITH"
+              placeholder="  ENTER YOUR NAME"
               className="input-field"
             />
             and I have a
@@ -28,7 +28,7 @@ const ContactUs = () => {
               type="text"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              placeholder="WEBSITE, FULL-TIME JOB, ETC."
+              placeholder="  WEBSITE, FULL-TIME JOB, "
               className="input-field"
             />
             that needs help.
@@ -39,7 +39,7 @@ const ContactUs = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="YOUR EMAIL ADDRESS"
+              placeholder="  YOUR EMAIL ADDRESS"
               className="input-field"
             />
             to get things started.
