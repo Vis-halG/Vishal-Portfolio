@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div>
-        <img src="src/assets/images/Portfolio.jpg" alt="Portfolio" />
+        <img src="https://res.cloudinary.com/dbithmxnp/image/upload/v1738522762/Portfolio--_wrrlr8.png" alt="Portfolio" />
       </div>
 
       <div
