@@ -68,7 +68,7 @@ const Home = () => {
         <div className="flex justify-center items-center order-1 md:order-2 mt-[9rem]">
           <img
             className="w-[100rem] md:w-[37rem] h-auto "
-            src="src/assets/images/Main-OG.png"
+            src="src/assets/images/Main-OG.jpg"
             alt="Hero"
           />
         </div>
