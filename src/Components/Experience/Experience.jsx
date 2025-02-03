@@ -6,7 +6,7 @@ function Experience() {
     <div className="experience">
       <div className="experience-container">
         <div className="heading">
-        <img src="src/assets/images/magic-bus-logo.gif" alt="Magic Bus Foundation" className="experience-image" />
+        <img src="https://portfolio-gules-psi-90.vercel.app/" alt="Magic Bus Foundation" className="experience-image" />
         <h2>Magic Bus Foundation </h2>
         </div>
         <div className="experience-content">
