@@ -71,9 +71,9 @@ const Projects = () => {
               id: 8, 
               type: "mini", 
               title: "Cursor Follower", 
-              description: "Built with HTML, Tailwind, and JavaScript, featuring real-time cursor tracking and smooth animations.", 
+              description: "Built with HTML, Internal CSS, and JavaScript, featuring real-time cursor tracking and smooth animations.", 
               image: "CursorFollower.png", 
-              link: "https://example.com/cursor-follower" 
+              link: "https://cursor-follower-mini.vercel.app/" 
             },
             { 
               id: 9, 
