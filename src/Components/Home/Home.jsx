@@ -24,7 +24,7 @@ const Home = () => {
   <a
     href="mailto:VishalGupta25980@gmail.com"
     target="_blank"
-    className="text-[#ff5f49] text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-red-500"
+    className="text-[#ff5f49] text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ea4335]"
   >
     <i className="fas fa-envelope"></i>
   </a>
