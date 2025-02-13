@@ -17,34 +17,34 @@ const Home = () => {
   <a
     href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
     target="_blank"
-    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-700"
+    className="text-[#ff5f49] text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-700"
   >
     <i className="fab fa-linkedin"></i>
   </a>
   <a
     href="mailto:VishalGupta25980@gmail.com"
     target="_blank"
-    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-red-500"
+    className="text-[#ff5f49] text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-red-500"
   >
     <i className="fas fa-envelope"></i>
   </a>
   <a
     href="https://wa.me/9773146258"
     target="_blank"
-    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-green-500"
+    className="text-[#ff5f49] text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-green-500"
   >
     <i className="fab fa-whatsapp"></i>
   </a>
   <a
     href="https://www.twitter.com"
     target="_blank"
-    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-400"
+    className="text-[#ff5f49] text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-400"
   >
     <i className="fab fa-twitter"></i>
   </a>
   <a
     href="tel:+9773146258"
-    className="text-gray-800 text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-500"
+    className="text-[#ff5f49] text-[1.75rem] md:text-[2rem] transition-transform duration-300 transform hover:scale-125 hover:text-blue-500"
   >
     <i className="fas fa-phone"></i>
   </a>
