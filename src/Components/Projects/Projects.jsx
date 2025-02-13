@@ -79,9 +79,9 @@ const Projects = () => {
               id: 9, 
               type: "mini", 
               title: "Stopwatch", 
-              description: "Implemented using HTML, Tailwind, and JavaScript, displaying time using number images instead of text-based numbers.", 
+              description: "Implemented using HTML, external CSS, and JavaScript, displaying time using number images instead of text-based numbers.", 
               image: "StopWatch.png", 
-              link: "https://example.com/stopwatch" 
+              link: "https://stop-watch-mini.vercel.app/" 
             },
             { 
                 id: 9, 
