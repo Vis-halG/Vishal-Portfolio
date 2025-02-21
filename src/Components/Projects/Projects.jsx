@@ -37,7 +37,7 @@ const Projects = () => {
           },
           // { 
           //   id: 5, 
-          //   type: "clone", 
+          //   type: "Basic", 
           //   title: "Facebook Clone", 
           //   description: "Social media UI built with React & Tailwind.", 
           //   image: "Cashify.png", 
@@ -78,24 +78,24 @@ const Projects = () => {
             { 
               id: 9, 
               type: "mini", 
-              title: "Stopwatch", 
+              title: "Stop Watch", 
               description: "Implemented using HTML, external CSS, and JavaScript, displaying time using number images instead of text-based numbers.", 
               image: "StopWatch.png", 
               link: "https://stop-watch-mini.vercel.app/" 
             },
-            // { 
-            //     id: 9, 
-            //     type: "mini", 
-            //     title: "Stopwatch", 
-            //     description: "Implemented using HTML, Tailwind, and JavaScript, displaying time using number images instead of text-based numbers.", 
-            //     image: "StopWatch.png", 
-            //     link: "https://example.com/stopwatch" 
-            //   },
+            { 
+                id: 9, 
+                type: "mini", 
+                title: "Number Guessing Game", 
+                description: "A number guessing game built with HTML, internal CSS, and JavaScript. Features a unique display where numbers are shown as images instead of text.", 
+                image: "NumberGame.png", 
+                link: "https://number-game-mini-qgk3jy4ae-vishalgs-projects.vercel.app/" 
+              },
             { 
               id: 10, 
               type: "mini", 
               title: "Memory Card Game", 
-              description: "A fun and interactive Memory Card Game built with HTML, Tailwind CSS, and JavaScript, featuring smooth animations and engaging gameplay.", 
+              description: "A fun and interactive Memory Card Game built with HTML, internal CSS, and JavaScript, featuring smooth animations and engaging gameplay.", 
               image: "MemoryCard.png", 
               link: "https://memory-game-mini.vercel.app/" 
             }
@@ -146,8 +146,9 @@ const Projects = () => {
             </section>
 
             {/* Filtered Categories */}
+             {renderProjects("mini", "Mini Projects")}
             {renderProjects("clone", "Clone Projects")}
-            {renderProjects("mini", "Mini Projects")}
+           
             {renderProjects("basic", "Basic Web Pages")}
         </div>
     );
