@@ -83,22 +83,22 @@ const Projects = () => {
               image: "StopWatch.png", 
               link: "https://stop-watch-mini.vercel.app/" 
             },
-            { 
-                id: 9, 
-                type: "mini", 
-                title: "Stopwatch", 
-                description: "Implemented using HTML, Tailwind, and JavaScript, displaying time using number images instead of text-based numbers.", 
-                image: "StopWatch.png", 
-                link: "https://example.com/stopwatch" 
-              },
             // { 
-            //   id: 10, 
-            //   type: "mini", 
-            //   title: "Search Bar", 
-            //   description: "Interactive search bar using HTML, Tailwind, and JavaScript, implementing optimized search logic.", 
-            //   image: "SearchBar.png", 
-            //   link: "https://example.com/search-bar" 
-            // }
+            //     id: 9, 
+            //     type: "mini", 
+            //     title: "Stopwatch", 
+            //     description: "Implemented using HTML, Tailwind, and JavaScript, displaying time using number images instead of text-based numbers.", 
+            //     image: "StopWatch.png", 
+            //     link: "https://example.com/stopwatch" 
+            //   },
+            { 
+              id: 10, 
+              type: "mini", 
+              title: "Memory Card Game", 
+              description: "A fun and interactive Memory Card Game built with HTML, Tailwind CSS, and JavaScript, featuring smooth animations and engaging gameplay.", 
+              image: "MemoryCard.png", 
+              link: "https://memory-game-mini.vercel.app/" 
+            }
           ];
     const renderProjects = (category, title) => {
         const filteredProjects = projects.filter(proj => proj.type === category);
