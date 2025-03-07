@@ -9,7 +9,11 @@ const Projects = () => {
       type: "clone",
       title: "Book My Show Clone",
       description: "Movie ticket booking platform built with React & Tailwind.  featuring real-time cursor tracking and smooth animations.",
+
       image: "BookMyShow.png",
+
+      image: "BookMyShow.jpg",
+
       link: "https://bookmyshow-clone-kappa.vercel.app/",
     },
     {
@@ -17,7 +21,11 @@ const Projects = () => {
       type: "clone",
       title: "Spotify Clone",
       description: "Music streaming website UI built with React & Tailwind.  featuring real-time cursor tracking and smooth animations.",
+
       image: "Spotify.png",
+
+      image: "Spotify.jpg",
+
       link: "https://spotify-clone-mauve-eight-16.vercel.app/",
     },
     // {
@@ -102,7 +110,9 @@ const Projects = () => {
       type: "mini",
       title: "Memory Card Game",
       description:
+
         "A Memory Card Game built with HTML, internal CSS, and JavaScript, featuring smooth animations and engaging gameplay.",
+
       image: "MemoryCard.png",
       link: "https://memory-game-mini.vercel.app/",
     },
@@ -171,6 +181,7 @@ const Projects = () => {
       {renderProjects("mini", "Mini Projects")}
       {renderProjects("clone", "Clone Projects")}
       {renderProjects("basic", "Own Design ")}
+      {renderProjects("basic", "Basic Web Pages")}
     </div>
   );
 };
