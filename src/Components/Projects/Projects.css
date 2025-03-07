@@ -1,0 +1,405 @@
+/* Projects Section */
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+
+
+
+
+
+  padding: 20px;
+  background-color: #ff6752;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+
+.projects div {
+  text-align: center;
+  padding: 3vh 7vh;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.projects div:hover {
+  transform: scale(1.05);
+}
+  
+
+.project-list {
+  display: grid; /* Change from flex to grid */
+  grid-template-columns: repeat(3, 1fr); /* Ensures 4 projects per row */
+  gap: 4vw;
+  justify-content: center;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+.project-item {
+  position: relative;
+  
+  cursor: pointer;
+}
+
+.project-item img {
+ 
+  height: 12vw;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease-in-out;
+}
+.project-category-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+ 
+  
+}
+.background {
+  width: 26.5vw;
+  height: 15vw;
+  background-color: #ff6752;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  z-index: 1; /* Keep it below details and description */
+  transition: all 0.4s ease-in-out;
+}
+
+.project-item:hover .background {
+  width: 29.5vw;
+  height: 19vw;
+  margin: -16px;
+  top: 0;
+  right: -4px;
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.details {
+  top: -1.5vw;
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure it stays on top */
+  z-index: 3; /* Higher than .background */
+}
+
+.details img {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 10px;
+  margin-right: 0.5vw;
+}
+
+.title h3 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+ 
+ 
+  color:white; /* Ensure it takes full width */
+}
+h3 a{
+  right: 0;
+}
+
+.title p {
+  font-size: 13px;
+  
+  color: #666;
+}
+
+
+.description {
+  font-size: 12px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 450px;
+  margin-top: -50px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.2s;
+  position: relative;
+  z-index: 3; /* Ensure description stays on top */
+}
+
+.project-item:hover .description {
+  opacity: 1;
+}
+@media screen and (max-width: 900px) {
+  /* Projects Section */
+  .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #ff6752;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 1rem;
+  }
+
+  .projects div {
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-size: 10px;
+  }
+
+  .projects div:hover {
+    transform: scale(1.07);
+  }
+
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    gap: 3vw;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  .project-item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .project-item img {
+    width: 100%;
+    height: 30vw;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease-in-out;
+    display: block;
+    margin: auto;
+  }
+
+  .project-category-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .background {
+    width: 42vw;
+    height: 22vw;
+    background-color: #ff6752;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .project-item:hover .background {
+    width: 45vw;
+    height: 26vw;
+    margin: -8px;
+    top: 0;
+    right: -4px;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .details {
+    top: -3vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .details img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5px;
+    margin-right: 1vw;
+  }
+
+  .title h3 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+  }
+
+  .title p {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .description {
+    font-size: 11px;
+    text-align: left;
+    color: #ffffff;
+    max-width: 350px;
+    margin-top: -20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.2s;
+    position: relative;
+    z-index: 3;
+  }
+
+  .project-item:hover .description {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 812px) {
+   /* Projects Section */
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #ff6752;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+
+.projects div {
+  text-align: center;
+  padding: 10px 10px;
+  width: 80px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  font-size: 9.5px;
+}
+
+.projects div:hover {
+  transform: scale(1.09);
+}
+  
+
+.project-list {
+  display: grid; /* Change from flex to grid */
+  grid-template-columns: repeat(1, 1fr); /* Ensures 4 projects per row */
+  gap: 20px;
+  justify-content: center;
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+}
+
+.project-item {
+  position: relative;
+  
+  cursor: pointer;
+}
+
+.project-item img {
+  width: 90%;
+  height: 40vw;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease-in-out;
+  display: block; /* Remove any default inline behavior */
+  margin: auto; /* Centers the image horizontally */
+}
+.project-category-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+ 
+  
+}
+.background {
+  width: 90vw;
+  height: 48vw;
+  background-color: #ff6752;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  z-index: 1; /* Keep it below details and description */
+  transition: all 0.4s ease-in-out;
+}
+
+.project-item:hover .background {
+  width: 99vw;
+  height: 65vw;
+  margin: 0px;
+  top: -15px;
+  right: 0.1vw;
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.details {
+  top: -8vw;
+  display:flex ;
+  align-items: left;
+  position: relative; /* Ensure it stays on top */
+  z-index: 3; /* Higher than .background */
+}
+
+.details img {
+  top: 3.5vw;
+  width: 6.5vw;
+  height: 6.5vw;
+  border-radius: 4px;
+  margin-left: 25px;
+}
+
+.title h3 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+  margin-left: 0px; /* Remove any unwanted margin */
+ top: 50px;
+  width: 100%; /* Ensure it takes full width */
+  color:white; /* Ensure it takes full width */
+}
+h3 a{
+  left: 0;
+}
+
+.title p {
+  font-size: 10px;
+  margin-bottom: -70px;
+  color: #666;
+}
+
+
+.description {
+  font-size: 12px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 450px;
+  margin-top: -40px;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.2s;
+  position: relative;
+  z-index: 3; /* Ensure description stays on top */
+}
+
+.project-item:hover .description {
+  opacity: 1;
+}
+
+ 
+}
