@@ -4,14 +4,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-
-
-
-
-
-
-
-  padding: 20px;
+padding: 20px;
   background-color: #ff6752;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,12 +39,10 @@
 
 .project-item {
   position: relative;
-  
   cursor: pointer;
 }
 
 .project-item img {
- 
   height: 12vw;
   border-radius: 10px;
   position: relative;
@@ -135,132 +126,214 @@ h3 a{
 .project-item:hover .description {
   opacity: 1;
 }
-@media screen and (max-width: 900px) {
-  /* Projects Section */
-  .projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 15px;
-    background-color: #ff6752;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    margin: 20px auto;
-    font-size: 1rem;
-  }
 
-  .projects div {
-    text-align: center;
-    padding: 10px;
-    width: 120px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    font-size: 10px;
-  }
-
-  .projects div:hover {
-    transform: scale(1.07);
-  }
-
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+ 
   .project-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    display: grid; /* Change from flex to grid */
+    grid-template-columns: repeat(3, 1fr); /* Ensures 4 projects per row */
     gap: 3vw;
     justify-content: center;
-    margin-top: 3vw;
+    margin-top: 1vw;
     margin-bottom: 2vw;
+  margin-left: 40px;
   }
-
+  
   .project-item {
     position: relative;
     cursor: pointer;
   }
-
+  
   .project-item img {
-    width: 100%;
-    height: 30vw;
+    height: 12vw;
     border-radius: 10px;
     position: relative;
     z-index: 2;
     transition: transform 0.4s ease-in-out;
-    display: block;
-    margin: auto;
   }
-
   .project-category-title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+   
+    
   }
-
   .background {
-    width: 42vw;
-    height: 22vw;
+    width: 27vw;
+    height: 15vw;
     background-color: #ff6752;
     border-radius: 10px;
     position: absolute;
-    top: 10px;
-    right: -10px;
-    z-index: 1;
+    top: 15px;
+    left: 15px;
+    z-index: 1; /* Keep it below details and description */
     transition: all 0.4s ease-in-out;
   }
-
+  
   .project-item:hover .background {
-    width: 45vw;
-    height: 26vw;
-    margin: -8px;
+    width: 29.5vw;
+    height: 20.5vw;
+    margin: -16px;
     top: 0;
-    right: -4px;
+    left: -4px;
     box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
   }
-
+  
   .details {
-    top: -3vw;
+    top: -1.5vw;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 3;
+    position: relative; /* Ensure it stays on top */
+    z-index: 3; /* Higher than .background */
   }
-
+  
   .details img {
-    width: 5vw;
-    height: 5vw;
-    border-radius: 5px;
-    margin-right: 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    margin-right: 0.5vw;
   }
-
+  
   .title h3 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    text-align: left;
-    color: white;
+    text-align: left; /* Align text to the left */
+   
+   
+    color:white; /* Ensure it takes full width */
   }
-
+  h3 a{
+    right: 0;
+  }
+  
   .title p {
-    font-size: 12px;
+    font-size: 13px;
+    
     color: #666;
   }
-
+  
   .description {
-    font-size: 11px;
+    font-size: 12px;
     text-align: left;
     color: #ffffff;
     max-width: 350px;
-    margin-top: -20px;
+    margin-top: -50px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out 0.2s;
     position: relative;
-    z-index: 3;
+    z-index: 3; /* Ensure description stays on top */
   }
-
+  
   .project-item:hover .description {
     opacity: 1;
   }
+  
+  }
+   
+@media only screen and ( min-width: 812px) and (max-width: 1300px) {
+ 
+.project-list {
+  display: grid; /* Change from flex to grid */
+  grid-template-columns: repeat(3, 1fr); /* Ensures 4 projects per row */
+  gap: 1vw;
+  justify-content: center;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+margin-left: 40px;
 }
+
+.project-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.project-item img {
+  height: 12vw;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease-in-out;
+}
+.project-category-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+ 
+  
+}
+.background {
+  width: 27vw;
+  height: 15vw;
+  background-color: #ff6752;
+  border-radius: 10px;
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  z-index: 1; /* Keep it below details and description */
+  transition: all 0.4s ease-in-out;
+}
+
+.project-item:hover .background {
+  width: 29.5vw;
+  height: 20.5vw;
+  margin: -16px;
+  top: 0;
+  right: 60px;
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.details {
+  top: -1.5vw;
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure it stays on top */
+  z-index: 3; /* Higher than .background */
+}
+
+.details img {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 10px;
+  margin-right: 0.5vw;
+}
+
+.title h3 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+ 
+ 
+  color:white; /* Ensure it takes full width */
+}
+h3 a{
+  right: 0;
+}
+
+.title p {
+  font-size: 13px;
+  
+  color: #666;
+}
+
+
+.description {
+  font-size: 12px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 350px;
+  margin-top: -50px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.2s;
+  position: relative;
+  z-index: 3; /* Ensure description stays on top */
+}
+
+.project-item:hover .description {
+  opacity: 1;
+}
+
+}
+    
 
 
 @media screen and (max-width: 812px) {
@@ -287,7 +360,7 @@ h3 a{
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  font-size: 9.5px;
+  font-size: 8.5px;
 }
 
 .projects div:hover {
