@@ -125,8 +125,9 @@ const Projects = () => {
                 <img src={`/assets/Projects/GithubLogo.png`} alt="Project icon" />
                 <div className="title">
                 <h3>
+                   <a href={project.link} target="_blank" rel="noreferrer">
     {project.title}{" "} 
-    <a href={project.link} target="_blank" rel="noreferrer">
+   
   <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ marginRight: "0" }} />
 </a>
 
