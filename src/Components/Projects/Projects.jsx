@@ -169,8 +169,8 @@ const Projects = () => {
 
       {/* Filtered Categories */}
       {renderProjects("mini", "Mini Projects")}
-      {renderProjects("clone", "Clone Projects")}
       {renderProjects("basic", "Own Design ")}
+       {renderProjects("clone", "Clone Projects")}
     </div>
   );
 };
