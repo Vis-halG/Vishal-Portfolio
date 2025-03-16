@@ -5,10 +5,12 @@
 }
 
 h1 {
-    font-size: 28px;
+/*     font-size: 28px;
     margin-bottom: 20px;
     color: #333;
-    margin-left: -19px;
+    margin-left: -19px; */
+     font-size: 15px;
+  font-weight: bold;
 }
 
 /* Grid layout: 5 skills per row */
