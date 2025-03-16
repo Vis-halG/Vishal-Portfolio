@@ -148,7 +148,7 @@ const Projects = () => {
     <div>
       {/* Project Statistics Section */}
       <section>
-        <div className="projects">
+        <div className="projects projects_section">
           <div>
             <h2>{projects.length}+</h2>
             <p>Total Projects</p>
