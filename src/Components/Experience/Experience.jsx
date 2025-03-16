@@ -3,7 +3,7 @@ import "./Experience.css";
 
 function Experience() {
   return (
-    <div className="experience">
+    <div className="experience" id="experience_section">
       <div className="experience-container">
         <div className="heading">
         <img src="https://res.cloudinary.com/dbithmxnp/image/upload/v1738544860/magic-bus-logo_tscczx.gif" alt="Magic Bus Foundation" className="experience-image" />
