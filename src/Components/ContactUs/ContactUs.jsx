@@ -7,7 +7,7 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container" id="contact_section">
       <div className="contact-form">
         <div className="contact-title">
         <h1 className="title">Let's get started.</h1>
