@@ -38,7 +38,7 @@ function Skills() {
     }, []);
 
     return (
-        <div ref={skillsRef} className="skills_section">
+        <div ref={skillsRef} className="skills_section" id="skills">
             <h1>My Skills</h1>
             <div className="skills_grid">
                 {skills.map((skill, index) => (
