@@ -61,10 +61,10 @@ const Navbar = () => {
   <a href="#skills_section">Tech Stack</a>
 </li>
         <li className="nav-item">
-          <a href="#">Experience</a>
+          <a href="#experience_section">Experience</a>
         </li>
         <li className="nav-item">
-          <a href="#">Contact Us</a>
+          <a href="#contact_section">Contact Us</a>
         </li>
         </div>
         <div className="social-icons">
