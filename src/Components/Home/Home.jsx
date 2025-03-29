@@ -35,16 +35,16 @@ const Home = () => {
   >
     <i className="fab fa-whatsapp"></i>
   </a>
-  <a
+{/*   <a
     href="https://www.twitter.com"
     target="_blank"
     className="text-blue-400 text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
   >
     <i className="fab fa-twitter"></i>
-  </a>
+  </a> */}
   <a
     href="tel:+9773146258"
-    className="text-blue-500 text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
+    className="text-blue-500 text-[1.4rem] md:text-[1.4rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
   >
     <i className="fas fa-phone"></i>
   </a>
