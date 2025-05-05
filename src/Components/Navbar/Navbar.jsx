@@ -98,11 +98,11 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="search-container">
+{/*         <div className="search-container">
           <input className="search-input" type="text" placeholder="Search.." />
           <i className="fas fa-search" id="search-icon"></i>
         </div>
-
+ */}
         {/* Mobile Theme & CV Download */}
         {/* Desktop Theme & CV Preview */}
         <div className="ThemeCV-mb">
